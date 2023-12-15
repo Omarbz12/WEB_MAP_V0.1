@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAAZIZ</title>
+    <!-- Use only one version of OpenLayers CSS -->
+    <link rel="stylesheet" href="./v8.2.0-package/ol.css">
+    <link rel="stylesheet" href="./v8.2.0-package/ol-ext.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">BAAZIZ</a>
+        </div>
+        <div>
+            <div class="nav-container">
+                 <ul class="nav-links">
+                    <li><a href="#">Accueil</a></li>
+                   <li><a href="#">Produits</a></li>
+                 <li><a href="#">Services</a></li>
+                   <li><a href="#">Contact</a></li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="grid-container">  
+        <div class="grid-1">
+                <h2>Layers</h2>
+                <input type="file" name="file" id="file">
+                <label for="file">Importer</label>
+                
+        </div>
+        <div class="grid-2"> 
+            <div id="js-map" class="map"></div>
+        </div>
+    </div>
+
+    <!-- Include only one version of OpenLayers script -->
+    <script src="./v8.2.0-package/dist/ol.js"></script>
+    <!-- Include your custom script -->
+    <script src="./v8.2.0-package/ol-ext.min.js"></script>
+
+    <script src="./main.js" integrity=""></script>
+</body>
+</html>
+
+

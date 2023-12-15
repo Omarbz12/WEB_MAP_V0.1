@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 100px;
+    background: rgb(84, 118, 134);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 60px;
+}
+
+
+.logo a{
+    font-size: 32px;
+    color: #f3f3f3;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+
+.nav-links li {   
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links li a:hover{
+    color: rgb(19, 20, 80);
+}
+
+.map{
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+    grid-template-rows: calc(100vh - 60px);
+    transform: translateY(60px);
+}
+.grid-1{
+    background-color: #d9d9d9;
+    border-right: 1px solid black;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+}
+.grid-1 input{
+    display: none;
+    width: 100%;
+}
+.grid-1 label{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+    padding: 1rem 2.5rem;
+    color: #000;
+    background-color: white;
+    cursor: pointer;
+}
+.grid-1 label:hover{
+    background-color: #eee;
+}
+.grid-1 h2{
+    text-align: center;
+}
+
+  
